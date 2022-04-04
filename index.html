@@ -405,7 +405,7 @@
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
-                  <p>Jacksonville, Florida</p>
+                  <p>Jacksonville, Florida - Remote Preferred</p>
                 </div>
 
                 <div class="email">
@@ -417,10 +417,12 @@
             </div>
 
             <div class="col-lg-8 mt-5 mt-lg-0">
-              <form
-                action="forms/contact.php"
+              <form name="contact"
+                action="POST"
                 method="post"
                 role="form"
+                data-netlify="true"
+                data-netlify-reacptcha="true"
                 class="php-email-form"
               >
                 <div class="row">
@@ -464,6 +466,7 @@
                     required
                   ></textarea>
                 </div>
+                <div class="form-group mt-3" data-netlify-recpatcha=""true"></div>
                 <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
